@@ -1,62 +1,42 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Text, Img, Heading, Input, RatingBar, Button } from "../../components";
+import HomeNavbar from "components/HomeNavbar";
 
 export default function HomepageVOnePage() {
   return (
     <>
       <Helmet>
         <title>e-commerce website</title>
-        <meta name="description" content="Web site created using create-react-app" />
+        <meta
+          name="description"
+          content="Web site created using create-react-app"
+        />
       </Helmet>
       <div className="flex flex-col items-center justify-start w-full bg-white-A700">
-        <header className="flex justify-center items-center w-full p-[17px] bg-white-A700">
-          <div className="flex flex-row md:flex-col justify-between items-center w-full mx-auto md:gap-10 md:px-5 max-w-[1632px]">
-            <div className="flex flex-row justify-start items-start gap-2">
-              <Img src="images/img_group_19.svg" alt="image" className="h-[24px] mt-1" />
-              <Heading as="h4">Elliye </Heading>
-            </div>
-            <div className="flex flex-row md:flex-col justify-between items-center w-[70%] md:w-full md:gap-10">
-              <div className="flex flex-row sm:flex-col justify-between w-auto gap-20 sm:gap-10">
-                <Text as="p" className="mt-0.5 sm:mt-0 !text-gray-800 !font-medium">
-                  Categories
-                </Text>
-                <Text as="p" className="!text-gray-800 !font-medium">
-                  New Arrival
-                </Text>
-                <Text as="p" className="!text-gray-800 !font-medium">
-                  Features
-                </Text>
-                <Text as="p" className="!text-gray-800 !font-medium">
-                  Collections
-                </Text>
-              </div>
-              <div className="flex flex-row justify-between items-center w-[22%] md:w-full">
-                <div className="flex flex-row justify-between w-auto gap-8">
-                  <Img src="images/img_search.svg" alt="search_one" className="h-[24px] w-[24px]" />
-                  <Img src="images/img_cart.svg" alt="cart_one" className="h-[24px] w-[24px]" />
-                </div>
-                <Button size="5xl" shape="square" className="sm:px-5 font-bold min-w-[107px]">
-                  Login
-                </Button>
-              </div>
-            </div>
-          </div>
-        </header>
+        <HomeNavbar />
         <div className="flex flex-col items-center justify-start w-full">
           <div className="flex flex-row justify-center w-full">
             <div className="flex flex-row justify-end w-full bg-gray-50">
               <div className="flex flex-row md:flex-col justify-end items-start w-full mx-auto md:gap-5 md:px-5 max-w-[1776px]">
                 <div className="flex flex-col items-start justify-start w-[32%] md:w-full mt-[102px] md:mt-0 z-[1]">
-                  <Text size="xl" as="p" className="!text-gray-800 !font-playfairdisplay">
+                  <Text
+                    size="xl"
+                    as="p"
+                    className="!text-gray-800 !font-playfairdisplay"
+                  >
                     Summer Sale
                   </Text>
                   <Heading size="lg" as="h1" className="mt-0.5">
                     50% Off
                   </Heading>
-                  <Text as="p" className="w-[93%] mt-[34px] !text-gray-800 leading-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.{" "}
+                  <Text
+                    as="p"
+                    className="w-[93%] mt-[34px] !text-gray-800 leading-8"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.{" "}
                   </Text>
                   <Button
                     size="3xl"
@@ -102,7 +82,11 @@ export default function HomepageVOnePage() {
                             alt="placeholder"
                             className="w-full md:h-[336px] object-cover"
                           />
-                          <Img src="images/img_button.svg" alt="button_one" className="h-[48px] mt-[-48px]" />
+                          <Img
+                            src="images/img_button.svg"
+                            alt="button_one"
+                            className="h-[48px] mt-[-48px]"
+                          />
                         </div>
                       </div>
                     </div>
@@ -126,37 +110,61 @@ export default function HomepageVOnePage() {
             </div>
             <div className="flex flex-row md:flex-col w-full gap-8">
               <div className="flex flex-col items-center justify-start w-[16%] md:w-full gap-[7px] p-9 sm:p-5 bg-gray-50">
-                <Img src="images/img_sweater.svg" alt="jacket_one" className="h-[96px] w-[96px]" />
+                <Img
+                  src="images/img_sweater.svg"
+                  alt="jacket_one"
+                  className="h-[96px] w-[96px]"
+                />
                 <Text as="p" className="mb-2.5">
                   Jacket
                 </Text>
               </div>
               <div className="flex flex-col items-center justify-start w-[16%] md:w-full gap-[7px] p-9 sm:p-5 bg-gray-50">
-                <Img src="images/img_tshirt.svg" alt="tshirt_one" className="h-[96px] w-[96px]" />
+                <Img
+                  src="images/img_tshirt.svg"
+                  alt="tshirt_one"
+                  className="h-[96px] w-[96px]"
+                />
                 <Text as="p" className="mb-2.5">
                   Shirt
                 </Text>
               </div>
               <div className="flex flex-col items-center justify-start w-[16%] md:w-full gap-2 p-9 sm:p-5 bg-gray-50">
-                <Img src="images/img_pants.svg" alt="pants_one" className="h-[96px] w-[96px]" />
+                <Img
+                  src="images/img_pants.svg"
+                  alt="pants_one"
+                  className="h-[96px] w-[96px]"
+                />
                 <Text as="p" className="mb-[9px]">
                   Pants
                 </Text>
               </div>
               <div className="flex flex-col items-center justify-start w-[16%] md:w-full gap-[7px] p-9 sm:p-5 bg-gray-800">
-                <Img src="images/img_boot.svg" alt="boot_one" className="h-[96px] w-[96px]" />
+                <Img
+                  src="images/img_boot.svg"
+                  alt="boot_one"
+                  className="h-[96px] w-[96px]"
+                />
                 <Text as="p" className="mb-2.5 !text-white-A700">
                   Shoes
                 </Text>
               </div>
               <div className="flex flex-col items-center justify-start w-[16%] md:w-full gap-2 p-9 sm:p-5 bg-gray-50">
-                <Img src="images/img_dress.svg" alt="dress_one" className="h-[96px] w-[96px]" />
+                <Img
+                  src="images/img_dress.svg"
+                  alt="dress_one"
+                  className="h-[96px] w-[96px]"
+                />
                 <Text as="p" className="mb-[9px]">
                   Dress
                 </Text>
               </div>
               <div className="flex flex-col items-center justify-start w-[16%] md:w-full gap-[7px] p-9 sm:p-5 bg-gray-50">
-                <Img src="images/img_belt.svg" alt="belt_one" className="h-[96px] w-[96px]" />
+                <Img
+                  src="images/img_belt.svg"
+                  alt="belt_one"
+                  className="h-[96px] w-[96px]"
+                />
                 <Text as="p" className="mb-2.5">
                   Accesories
                 </Text>
@@ -193,7 +201,11 @@ export default function HomepageVOnePage() {
                         $299
                       </Text>
                     </div>
-                    <Button size="5xl" shape="square" className="sm:px-5 font-bold min-w-[200px] sm:min-w-full">
+                    <Button
+                      size="5xl"
+                      shape="square"
+                      className="sm:px-5 font-bold min-w-[200px] sm:min-w-full"
+                    >
                       Add to Cart
                     </Button>
                   </div>
@@ -296,7 +308,11 @@ export default function HomepageVOnePage() {
                       $299
                     </Text>
                   </div>
-                  <Button size="5xl" shape="square" className="sm:px-5 font-bold min-w-[200px] sm:min-w-full">
+                  <Button
+                    size="5xl"
+                    shape="square"
+                    className="sm:px-5 font-bold min-w-[200px] sm:min-w-full"
+                  >
                     Add to Cart
                   </Button>
                 </div>
@@ -494,7 +510,9 @@ export default function HomepageVOnePage() {
                           Summer <br />
                         </>
                       </span>
-                      <span className="text-gray-800 font-bold">Collection</span>
+                      <span className="text-gray-800 font-bold">
+                        Collection
+                      </span>
                     </Text>
                   </div>
                   <div className="h-[400px] w-[33%] md:w-full bg-blue_gray-100 relative">
@@ -513,7 +531,9 @@ export default function HomepageVOnePage() {
                           Casual <br />
                         </>
                       </span>
-                      <span className="text-white-A700 font-bold">Collection</span>
+                      <span className="text-white-A700 font-bold">
+                        Collection
+                      </span>
                     </Text>
                   </div>
                   <div className="h-[400px] w-[33%] md:w-full bg-blue_gray-100 relative">
@@ -532,17 +552,28 @@ export default function HomepageVOnePage() {
                           Big Vibe <br />
                         </>
                       </span>
-                      <span className="text-white-A700 font-bold">Collection</span>
+                      <span className="text-white-A700 font-bold">
+                        Collection
+                      </span>
                     </Text>
                   </div>
                 </div>
-                <Button color="white_A700" size="4xl" shape="square" className="w-[60px] ml-[-30px] md:ml-0">
+                <Button
+                  color="white_A700"
+                  size="4xl"
+                  shape="square"
+                  className="w-[60px] ml-[-30px] md:ml-0"
+                >
                   <Img src="images/img_arrow_gray_800.svg" />
                 </Button>
               </div>
             </div>
             <div className="flex flex-row justify-start w-full top-0 right-0 left-0 p-[43px] m-auto md:p-5 bg-gray-800 absolute">
-              <Heading size="md" as="h2" className="mb-[284px] ml-[100px] md:ml-5 !text-white-A700">
+              <Heading
+                size="md"
+                as="h2"
+                className="mb-[284px] ml-[100px] md:ml-5 !text-white-A700"
+              >
                 Summer Collections
               </Heading>
             </div>
@@ -822,7 +853,11 @@ export default function HomepageVOnePage() {
               <div className="flex flex-row md:flex-col w-full gap-8 px-36 md:px-5 bg-gray-50">
                 <div className="flex flex-col items-center justify-center h-[384px] w-[24%] md:w-full sm:h-auto gap-8 px-14 py-[63px] md:p-5">
                   <div className="flex flex-col items-center justify-center h-[120px] w-[120px] p-[25px] sm:p-5 border-gray-500 border-2 border-solid rounded-[50%]">
-                    <Img src="images/img_truck.svg" alt="truck_one" className="h-[65px] w-[65px]" />
+                    <Img
+                      src="images/img_truck.svg"
+                      alt="truck_one"
+                      className="h-[65px] w-[65px]"
+                    />
                   </div>
                   <div className="flex flex-col items-center justify-start w-[78%] md:w-full gap-3.5">
                     <Heading as="h3">Free Delivery</Heading>
@@ -837,7 +872,11 @@ export default function HomepageVOnePage() {
                 </div>
                 <div className="flex flex-col items-center justify-center h-[384px] w-[24%] md:w-full sm:h-auto gap-8 px-14 py-[63px] md:p-5">
                   <div className="flex flex-col items-center justify-start h-[120px] w-[120px] p-[26px] sm:p-5 border-gray-500 border-2 border-solid rounded-[50%]">
-                    <Img src="images/img_card.svg" alt="card_one" className="h-[64px] w-[64px]" />
+                    <Img
+                      src="images/img_card.svg"
+                      alt="card_one"
+                      className="h-[64px] w-[64px]"
+                    />
                   </div>
                   <div className="flex flex-col items-center justify-start w-[78%] md:w-full pt-0.5 gap-[13px]">
                     <Heading as="h4">Payment Method</Heading>
@@ -852,7 +891,11 @@ export default function HomepageVOnePage() {
                 </div>
                 <div className="flex flex-col items-center justify-center h-[384px] w-[24%] md:w-full sm:h-auto gap-8 px-14 py-[63px] md:p-5">
                   <div className="flex flex-col items-center justify-center h-[120px] w-[120px] p-[25px] sm:p-5 border-gray-500 border-2 border-solid rounded-[50%]">
-                    <Img src="images/img_broken.svg" alt="broken_one" className="h-[64px] w-[64px]" />
+                    <Img
+                      src="images/img_broken.svg"
+                      alt="broken_one"
+                      className="h-[64px] w-[64px]"
+                    />
                   </div>
                   <div className="flex flex-col items-center justify-start w-[78%] md:w-full pt-0.5 gap-[13px]">
                     <Heading as="h5">Warranty</Heading>
@@ -867,7 +910,11 @@ export default function HomepageVOnePage() {
                 </div>
                 <div className="flex flex-col items-center justify-center h-[384px] w-[24%] md:w-full sm:h-auto gap-8 px-14 py-[63px] md:p-5">
                   <div className="flex flex-col items-center justify-center h-[120px] w-[120px] p-[25px] sm:p-5 border-gray-500 border-2 border-solid rounded-[50%]">
-                    <Img src="images/img_support.svg" alt="support_one" className="h-[65px] w-[65px]" />
+                    <Img
+                      src="images/img_support.svg"
+                      alt="support_one"
+                      className="h-[65px] w-[65px]"
+                    />
                   </div>
                   <div className="flex flex-col items-center justify-start w-[84%] md:w-full pt-0.5 gap-[13px]">
                     <Heading as="h6">Customer Support </Heading>
@@ -883,7 +930,11 @@ export default function HomepageVOnePage() {
               </div>
             </div>
           </div>
-          <Img src="images/img_brand.svg" alt="brand_one" className="h-[68px] mt-[100px]" />
+          <Img
+            src="images/img_brand.svg"
+            alt="brand_one"
+            className="h-[68px] mt-[100px]"
+          />
         </div>
         <footer className="flex justify-center items-center w-full mt-[100px] p-[30px] sm:p-5 bg-gray-800">
           <div className="flex flex-col items-center justify-center w-[83%] mt-[31px] ml-[113px] gap-[82px] md:ml-5">
@@ -907,7 +958,9 @@ export default function HomepageVOnePage() {
                       type="email"
                       name="email"
                       placeholder="Enter your email"
-                      suffix={<Img src="images/img_arrow_gray_800.svg" alt="Arrow" />}
+                      suffix={
+                        <Img src="images/img_arrow_gray_800.svg" alt="Arrow" />
+                      }
                       className="w-[91%] sm:w-full text-gray-500_87 tracking-[0.36px]"
                     />
                   </div>
@@ -986,19 +1039,35 @@ export default function HomepageVOnePage() {
                       Get In Touch
                     </Heading>
                     <div className="flex flex-row justify-between w-[79%] md:w-full">
-                      <Img src="images/img_instagram.svg" alt="instagram_one" className="h-[24px] w-[24px]" />
+                      <Img
+                        src="images/img_instagram.svg"
+                        alt="instagram_one"
+                        className="h-[24px] w-[24px]"
+                      />
                       <div className="flex flex-col items-center justify-start h-[24px] w-[24px]">
                         <div className="flex flex-col items-center justify-start h-[24px] w-[24px]">
-                          <Img src="images/img_twitter.svg" alt="twitter_one" className="h-[24px] w-[24px]" />
+                          <Img
+                            src="images/img_twitter.svg"
+                            alt="twitter_one"
+                            className="h-[24px] w-[24px]"
+                          />
                         </div>
                       </div>
-                      <Img src="images/img_facebook.svg" alt="facebook_one" className="h-[24px] w-[24px]" />
+                      <Img
+                        src="images/img_facebook.svg"
+                        alt="facebook_one"
+                        className="h-[24px] w-[24px]"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <Text size="xs" as="p" className="mr-[583px] md:mr-5 !text-white-A700">
+            <Text
+              size="xs"
+              as="p"
+              className="mr-[583px] md:mr-5 !text-white-A700"
+            >
               Copyright © 2021 Elliye. All Right Reseved
             </Text>
           </div>
